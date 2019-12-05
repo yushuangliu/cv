@@ -1,0 +1,164 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 8 February 2019
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,]{moderncv}
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{HTML}{141414}% custom
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+
+\usepackage[scaled=0.86]{DejaVuSansMono}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\def\donothing#1{#1}
+\def\emaillink#1{#1}
+
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75,footskip=52pt]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+\usepackage[T1]{fontenc}
+\usepackage[light]{merriweather}
+
+% personal data
+\name{}{Yushuang Liu}
+
+\address{03 Moore Building. University Park, PA16802}{}{}
+\phone[mobile]{+1 619 496 7274} % Phone number
+\email{\donothing{\href{mailto:yzl67@psu.edu}{\nolinkurl{yzl67@psu.edu}}}}
+ % Personal website
+
+
+
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+
+
+
+\quote{Updated December 2019}
+
+% Templates for detailed entries
+% Arguments: what when with where why
+\usepackage{etoolbox}
+\def\detaileditem#1#2#3#4#5{
+	\cventry{#2}{#1}{#3}{#4}{}{{\ifx#5\empty\else{\begin{itemize}#5\end{itemize}}\fi}}}
+\def\detailedsection#1{\nopagebreak#1}
+
+% Templates for brief entries
+% Arguments: what when with
+\def\briefitem#1#2#3{\cvitem{#2}{#1. #3}}
+\def\briefsection#1{\nopagebreak#1}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\detailedsection{\detaileditem{The Pennsylvania State University}{May 2021 (anticipated)}{PhD in Developmental Psychology and Language Science}{University Park, PA}{\item{Advisor: Janet G. van Hell, PhD}}\detaileditem{The Pennsylvania State University}{December 2018}{MS in Psychology}{University Park, PA}{\item{Advisor: Janet G. van Hell, PhD}\item{Thesis: When Adults Learn Novel Word with Meanings: The Role of Consolidation in Word Learning and Memory Retention}}\detaileditem{San Diego State University}{August 2016}{MA in Psychology}{San Diego, CA}{\item{Advisor: Margaret Friend, PhD}\item{Thesis: Translation equivalents and early Executive Function in Simultaneous Bilinguals}}\detaileditem{Wuhan University}{Spring 2014}{BS in Psychology}{Wuhan, China}{\item{Advisor: Meimei Zhang, PhD}\item{Thesis: The study of the relationship between grandparent-raising-grandchildren’s social behavior, attachment and grandparents’ subjective reasons of raising grandchildren}}}
+
+\hypertarget{skills}{%
+\section{Skills}\label{skills}}
+
+\textbf{Programming:} R, MATLAB, E-Prime, Praat, SPSS \vspace{6pt}
+
+\textbf{Data analyses:} Regression, repeated-measure AONVA, growth curve analysis, cluster analysis \vspace{6pt}
+
+\textbf{EEG data analyses:} Event-related potentials (ERPs), time frequency representations (TFRs) using EEGLab and Fieldtrip \vspace{6pt}
+
+\textbf{Languages:} Mandarin (native proficiency), English (professional proficiency)
+
+\hypertarget{awards-and-honors}{%
+\section{Awards and Honors}\label{awards-and-honors}}
+
+\detailedsection{\detaileditem{Center for Langauge Science, the Pennsylvania State University}{2019}{Adele Miccio Travel Award}{}{\empty}\detaileditem{Center for Langauge Science, the Pennsylvania State University}{2019}{NSF Partnerships in International Research and Education Fellowship}{}{\empty}\detaileditem{Child Study Center, the Pennsylvania State University}{2018}{Travel award to the 59th Psychonomic Society}{}{\empty}\detaileditem{Child Study Center, the Pennsylvania State University}{2018}{Travel award to the 10th Society for the Neurobiology of Language Meeting}{}{\empty}\detaileditem{Child Study Center, the Pennsylvania State University}{2017}{Travel award to Psycholinguistics Shorts 2017 Meeting}{}{\empty}\detaileditem{Wuhan University, China}{2013}{1st prize Scholarship for Hong Kong, Macao and Taiwan students}{}{\empty}\detaileditem{Baosteel Education Foundation, China}{2012}{Baosteel Scholarship}{}{\empty}\detaileditem{Wuhan University, China}{2011}{3rd prize Scholarship for Hong Kong, Macao and Taiwan students}{}{\empty}}
+
+\hypertarget{first-author-manuscripts-in-preparation}{%
+\section{First-author manuscripts in preparation}\label{first-author-manuscripts-in-preparation}}
+
+\textbf{Child L2 learners' comprehension of L2 sentences with different accents}\\
+\textbf{Liu, Y.}, Unsworth, S., \& van Hell, J., G. \vspace{6pt}
+
+\textbf{Tracking the lexical consolidation of novel word meanings: Time-frequency analyses}\\
+\textbf{Liu, Y.}, \& van Hell, J., G.
+
+\hypertarget{peer-reviewed-publication}{%
+\section{Peer-reviewed publication}\label{peer-reviewed-publication}}
+
+\textbf{Learning novel words with meanings: The role of consolidation in word learning and memory retention}\\
+\textbf{Liu, Y.}, \& van Hell, J., G.\\
+*Under review at the CoNSALL Special issue in Language Learning \vspace{6pt}
+
+\textbf{A cross-language study of decontextualized vocabulary comprehension in toddlerhood and kindergarten readiness}\\
+Friend, M., Smolak, E., \textbf{Liu, Y.}, Poulin-Dubois, D., \& Zesiger, P.\\
+* \emph{Developmental Psychology, 54}, 1317--1333. \href{doi:\%2010.1037/dev0000514}{doi: 10.1037/dev0000514}
+
+\hypertarget{research-experience}{%
+\section{Research experience}\label{research-experience}}
+
+\textbf{The Pennsylvania State University (2016 - present)}\\
+My current research assistantship responsibility is leading and conducting EEG language experiments, including stimuli creation, experimental designs, experimental programming, data collection in both adults and children, data preprocessing and analyses. My secondary responsibility is training and mentoring undergraduate research assistants.
+\newpage
+\textbf{San Diego State University (SDSU; 2014 - 2016)}\\
+My research assistantship responsibility at SDSU focused on database management across three collaborators' sites (SDSU, Concordia University, Cananda and University of Geneva, Switzerland) using Filemaker, which included data entry, updating variables and constructs for subsequent waves, developing data entry dictionary to maintain consistency, and interacting with the SDSU IT for troubleshooting. I also mentored undergraduate research assistants and assisted with experiments and data collection. \vspace{12pt}
+
+\detailedsection{\detaileditem{Research assistant}{Spring 2017 - present}{Divergent thinking and STEM education}{}{\empty}\detaileditem{Research assistant}{Fall 2017}{Speaker identity and accent effects}{}{\empty}\detaileditem{Research assistant}{Fall 2016 - Spring 2017}{L2 learning in adults and children}{}{\empty}\detaileditem{Research assistant}{Spring 2015 - Spring 2016}{Database management}{}{\empty}}
+
+\hypertarget{teaching-experience}{%
+\section{Teaching experience}\label{teaching-experience}}
+
+My teaching assistantship responsibility broadly includes teaching guest lectures, grading assignments and exams and providing feedback, proctoring exams, holding office hours, organizing make-up exams and producing engaging in-class activities. \vspace{12pt}
+
+\detailedsection{\detaileditem{Teaching assistant}{Fall 2019}{Neurological Bases of Human Behavior}{}{\empty}\detaileditem{Teaching assistant}{Spring 2017}{L1 Acquisition}{}{\empty}\detaileditem{Teaching assistant}{Fall 2016}{The Psychology of Gender}{}{\empty}\detaileditem{Teaching assistant}{Fall 2014}{Psychology of Infant and Child Development}{}{\empty}}
+
+\hypertarget{oral-presentations}{%
+\section{Oral presentations}\label{oral-presentations}}
+
+\detailedsection{\detaileditem{Liu, Y., \& van Hell, J., G.}{May 2019}{Psycholinguistics in Flanders (PiF) 2019, Antwerp, Belgium}{}{\item{Learning Novel Words with Novel Meanings: An ERP Study of Semantic Integration and Offline Consolidation}}\detaileditem{Liu, Y., \& van Hell, J., G.}{April 2019}{UD Linguistics and Cognitive Science Student Conference, Newark, DE}{}{\item{Learning novel word with meanings: an ERP investigation of semantic integration and offline consolidation}}}
+
+\newpage
+
+\hypertarget{poster-presentations}{%
+\section{Poster presentations}\label{poster-presentations}}
+
+\detailedsection{\detaileditem{Lei, D., Liu, Y., \& van Hell, J., G.}{November 2019}{60th Annual Psychonomic Society, Montréal, Canada}{}{\item{Word learning with definitions and visualizations: An ERP study}}\detaileditem{Grey, S., Liu, Y., Zink, H., \& van Hell, J., G.}{November 2019}{60th Annual Psychonomic Society, Montréal, Canada}{}{\item{Natural conversation boosts speaker identity effects in native- and foreign-accented spoken sentence comprehension: An auditory ERP study}}\detaileditem{Jończyk, R., Liu, Y., Kremer, G., Siddique, Z., \& van Hell, J., G.}{March 2019}{Cognitive Neuroscience Society 2019, San Francisco, CA}{}{\item{How creativity training modulates electrophysiological responses to novel metaphors}}\detaileditem{Liu, Y., \& van Hell, J., G.}{November 2018}{59th Annual Psychonomic Society, New Orleans, LA}{}{\item{Novel word learning: An ERP study on lexical consolidation in monolingual, inexperienced foreign language learners}}\detaileditem{Jończyk, R., Liu, Y., Kremer, G., Siddique, Z., \& van Hell, J., G.}{November 2018}{59th Annual Psychonomic Society, New Orleans, LA}{}{\item{Engineering creativity: Electrophysiological responses to novel metaphors differ as a function of prior knowledge}}\detaileditem{Liu, Y., \& van Hell, J., G.}{August 2018}{10th Society for Neurobiology of Language, Québec City, Canada}{}{\item{Learning novel words with meanings: The role of consolidation in word learning and memory retention}}\detaileditem{Liu, Y., \& van Hell, J., G.}{February 2017}{Psycholinguistics Shorts 2017, Ottawa, Canada}{}{\item{The role of semantics in L2 word learning and consolidation: An ERP study}}\detaileditem{Barlam, D., Liu, Y., Poulin-Dubois, D., Zesiger, P. \& Friend, M.}{May 2016}{ICIS 20th Biennial Meeting, New Orleans, LA}{}{\item{Early executive function in Spanish-English bilingual and Spanish monolingual children}}\detaileditem{Liu, Y., Poulin-Dubois, D., Zesiger, P. \& Friend, M.}{October 2015}{Cognitive Development Society 9th Biennial Meeting, Columbus, OH}{}{\item{Translation equivalents and early executive function in simultaneous bilinguals}}}
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\detailedsection{\detaileditem{The Pennsylvania State University, University Park, PA}{jgv3@psu.edu}{Janet G. van Hell, Ph.D.}{}{\item{Professor of Psychology and Co-director of Center for Language Science}}\detaileditem{San Diego State University, San Diego, CA}{mfriend@mail.sdsu.edu}{Margaret Friend, Ph.D.}{}{\item{Professor of Psychology}}\detaileditem{San Diego State University, San Diego, CA}{gmatt@mail.sdsu.edu}{Georg E. Matt, Ph.D.}{}{\item{Professor and Department Head of Psychology}}}
+
+
+\end{document}
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
