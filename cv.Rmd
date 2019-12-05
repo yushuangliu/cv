@@ -1,0 +1,154 @@
+---
+name: Yushuang Liu
+docname: cv
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: Updated `r format(Sys.time(), '%B %Y')` 
+address: 03 Moore Building. University Park, PA16802
+phone: +1 619 496 7274
+email: yzl67@psu.edu
+website: yushuangliu.github.io
+headcolor: 141414
+self_contained: no
+output: 
+  vitae::moderncv:
+    theme: banking
+    keep_tex: true
+header-includes:
+  - \usepackage[T1]{fontenc}
+  - \usepackage[light]{merriweather}
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(tinytex)
+library(vitae)
+options(tinytex.verbose = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Education
+```{r education}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "PhD in Developmental Psychology and Language Science", "The Pennsylvania State University", "University Park, PA", "May 2021 (anticipated)", "Advisor: Janet G. van Hell, PhD",
+  "MS in Psychology", "The Pennsylvania State University", "University Park, PA", "December 2018","Advisor: Janet G. van Hell, PhD",
+  "MS in Psychology", "The Pennsylvania State University", "University Park, PA", "December 2018", "Thesis: When Adults Learn Novel Word with Meanings: The Role of Consolidation in Word Learning and Memory Retention",
+  "MA in Psychology", "San Diego State University", "San Diego, CA", "August 2016", "Advisor: Margaret Friend, PhD",
+  "MA in Psychology", "San Diego State University", "San Diego, CA", "August 2016", "Thesis: Translation equivalents and early Executive Function in Simultaneous Bilinguals",
+  "BS in Psychology", "Wuhan University", "Wuhan, China", "Spring 2014", "Advisor: Meimei Zhang, PhD", 
+  "BS in Psychology", "Wuhan University", "Wuhan, China", "Spring 2014", "Thesis: The study of the relationship between grandparent-raising-grandchildren’s social behavior, attachment and grandparents’ subjective reasons of raising grandchildren",
+) %>% 
+  detailed_entries(with=degree, when=dates, what=uni, where=loc, why=details)
+```
+
+# Skills
+**Programming:** R, MATLAB, E-Prime, Praat, SPSS \vspace{6pt}
+
+**Data analyses:** Regression, repeated-measure AONVA, growth curve analysis, cluster analysis \vspace{6pt}
+
+**EEG data analyses:** Event-related potentials (ERPs), time frequency representations (TFRs) using EEGLab and Fieldtrip \vspace{6pt} 
+
+**Languages:** Mandarin (native proficiency), English (professional proficiency)
+
+# Awards and Honors
+```{r awards}
+tribble(
+  ~ loc, ~ date, ~ awards,
+  "Center for Langauge Science, the Pennsylvania State University",  "2019", "Adele Miccio Travel Award",
+  "Center for Langauge Science, the Pennsylvania State University",  "2019", "NSF Partnerships in International Research and Education Fellowship",
+  "Child Study Center, the Pennsylvania State University", "2018", "Travel award to the 59th Psychonomic Society", 
+  "Child Study Center, the Pennsylvania State University",  "2018", "Travel award to the 10th Society for the Neurobiology of Language Meeting",
+   "Child Study Center, the Pennsylvania State University","2017",  "Travel award to Psycholinguistics Shorts 2017 Meeting",
+    "Wuhan University, China",  "2013", "1st prize Scholarship for Hong Kong, Macao and Taiwan students", 
+  "Baosteel Education Foundation, China", "2012", "Baosteel Scholarship", 
+   "Wuhan University, China","2011", "3rd prize Scholarship for Hong Kong, Macao and Taiwan students", 
+) %>%
+  detailed_entries(what=loc, when=date, with=awards)
+```
+# First-author manuscripts in preparation
+**Child L2 learners’ comprehension of L2 sentences with different accents**    
+**Liu, Y.**, Unsworth, S., & van Hell, J., G. \vspace{6pt}
+
+**Tracking the lexical consolidation of novel word meanings: Time-frequency analyses**   
+**Liu, Y.**, & van Hell, J., G.
+
+# Peer-reviewed publication
+**Learning novel words with meanings: The role of consolidation in word learning and memory retention**   
+**Liu, Y.**, & van Hell, J., G.     
+*Under review at the CoNSALL Special issue in Language Learning \vspace{6pt}
+
+**A cross-language study of decontextualized vocabulary comprehension in toddlerhood and kindergarten readiness**   
+Friend, M., Smolak, E., **Liu, Y.**, Poulin-Dubois, D., & Zesiger, P.  
+* *Developmental Psychology, 54*, 1317–1333. [doi: 10.1037/dev0000514](doi: 10.1037/dev0000514)
+
+# Research experience
+**The Pennsylvania State University (2016 - present)**   
+My current research assistantship responsibility is leading and conducting EEG language experiments, including stimuli creation, experimental designs, experimental programming, data collection in both adults and children, data preprocessing and analyses. My secondary responsibility is training and mentoring undergraduate research assistants. 
+\newpage
+**San Diego State University (SDSU; 2014 - 2016)**   
+My research assistantship responsibility at SDSU focused on database management across three collaborators' sites (SDSU, Concordia University, Cananda and University of Geneva, Switzerland) using Filemaker, which included data entry, updating variables and constructs for subsequent waves, developing data entry dictionary to maintain consistency, and interacting with the SDSU IT for troubleshooting. I also mentored undergraduate research assistants and assisted with experiments and data collection. \vspace{12pt}     
+
+```{r research}
+tribble(
+  ~ role, ~ date, ~ project, 
+  "Research assistant", "Spring 2017 - present", "Divergent thinking and STEM education", 
+  "Research assistant", "Fall 2017", "Speaker identity and accent effects", 
+  "Research assistant",  "Fall 2016 - Spring 2017","L2 learning in adults and children", 
+   "Research assistant", "Spring 2015 - Spring 2016","Database management", 
+) %>% 
+  detailed_entries(what=role, when=date, with=project)
+```
+
+
+# Teaching experience   
+My teaching assistantship responsibility broadly includes teaching guest lectures, grading assignments and exams and providing feedback, proctoring exams, holding office hours, organizing make-up exams and producing engaging in-class activities. \vspace{12pt}
+
+```{r teaching}
+tribble(
+  ~ role, ~ date, ~ project, 
+  "Teaching assistant", "Fall 2019", "Neurological Bases of Human Behavior", 
+  "Teaching assistant","Spring 2017", "L1 Acquisition", 
+  "Teaching assistant", "Fall 2016","The Psychology of Gender", 
+  "Teaching assistant", "Fall 2014","Psychology of Infant and Child Development", 
+) %>% 
+  detailed_entries(what=role, when=date, with=project)
+```
+
+# Oral presentations
+```{r talk}
+tribble(
+  ~ people, ~ date, ~ meeting, ~ loc, ~title,
+   "Liu, Y., & van Hell, J., G.","May 2019", "Psycholinguistics in Flanders (PiF) 2019, Antwerp, Belgium","", "Learning Novel Words with Novel Meanings: An ERP Study of Semantic Integration and Offline Consolidation", 
+    "Liu, Y., & van Hell, J., G.", "April 2019", "UD Linguistics and Cognitive Science Student Conference, Newark, DE","","Learning novel word with meanings: an ERP investigation of semantic integration and offline consolidation",
+) %>%
+  detailed_entries(what=people, when=date, with=meeting, where=loc, why=title)
+```
+
+\newpage
+# Poster presentations
+```{r poster}
+tribble(
+  ~ people, ~ date, ~ meeting, ~ loc, ~title,
+    "Lei, D., Liu, Y., & van Hell, J., G.","November 2019", "60th Annual Psychonomic Society, Montréal, Canada","", "Word learning with definitions and visualizations: An ERP study", 
+    "Grey, S., Liu, Y., Zink, H., & van Hell, J., G.", "November 2019", "60th Annual Psychonomic Society, Montréal, Canada", "", "Natural conversation boosts speaker identity effects in native- and foreign-accented spoken sentence comprehension: An auditory ERP study",
+    "Jończyk, R., Liu, Y., Kremer, G., Siddique, Z., & van Hell, J., G.", "March 2019", "Cognitive Neuroscience Society 2019, San Francisco, CA", "","How creativity training modulates electrophysiological responses to novel metaphors",
+   "Liu, Y., & van Hell, J., G.", "November 2018","59th Annual Psychonomic Society, New Orleans, LA","","Novel word learning: An ERP study on lexical consolidation in monolingual, inexperienced foreign language learners",
+    "Jończyk, R., Liu, Y., Kremer, G., Siddique, Z., & van Hell, J., G.","November 2018","59th Annual Psychonomic Society, New Orleans, LA","","Engineering creativity: Electrophysiological responses to novel metaphors differ as a function of prior knowledge",
+    "Liu, Y., & van Hell, J., G.","August 2018","10th Society for Neurobiology of Language, Québec City, Canada","","Learning novel words with meanings: The role of consolidation in word learning and memory retention",
+    "Liu, Y., & van Hell, J., G.","February 2017","Psycholinguistics Shorts 2017, Ottawa, Canada","", "The role of semantics in L2 word learning and consolidation: An ERP study",
+    "Barlam, D., Liu, Y., Poulin-Dubois, D., Zesiger, P. & Friend, M.","May 2016","ICIS 20th Biennial Meeting, New Orleans, LA","","Early executive function in Spanish-English bilingual and Spanish monolingual children",
+    "Liu, Y., Poulin-Dubois, D., Zesiger, P. & Friend, M.","October 2015","Cognitive Development Society 9th Biennial Meeting, Columbus, OH","","Translation equivalents and early executive function in simultaneous bilinguals",
+) %>%
+  detailed_entries(what=people, when=date, with=meeting, where=loc, why=title)
+```
+# References
+```{r references}
+tribble(
+  ~ uni, ~ email, ~ name, ~title,
+  "The Pennsylvania State University, University Park, PA","jgv3@psu.edu", "Janet G. van Hell, Ph.D.", "Professor of Psychology and Co-director of Center for Language Science", 
+  "San Diego State University, San Diego, CA","mfriend@mail.sdsu.edu", "Margaret Friend, Ph.D.", "Professor of Psychology", 
+  "San Diego State University, San Diego, CA","gmatt@mail.sdsu.edu", "Georg E. Matt, Ph.D.", "Professor and Department Head of Psychology", 
+  # "San Diego State University, San Diego, CA", "[cmurphy@mail.sdsu.edu](cmurphy@mail.sdsu.edu)","Claire Murphy, Ph.D.","Professor of Psychology",
+) %>%
+  detailed_entries(what=uni, when=email, with=name, why=title)
+```
